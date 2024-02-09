@@ -2,7 +2,7 @@
 #include "stdio.h"
 #include "string.h"
 
-
+//https://unix.stackexchange.com/questions/11946/how-big-is-the-pipe-buffer
 //65535 is max pipe sizr
 int main()
 {
