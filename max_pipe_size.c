@@ -8,10 +8,10 @@ int main()
 {
 	int fd[2];
 	pipe(fd);
-	int nb_char_write = 66666;
+	size_t nb_char_write = 66666;
 	for (size_t i = 0; i < nb_char_write; i++)
 	{
-		write(fd[1], "a", 1 );
+		write(fd[1], "a", 1);
 		printf("%zu\n", i);
 	}
 	write(fd[1], "z", 1 );
